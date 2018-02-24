@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inter_view_margin">8dp</dimen>
+    <dimen name="inter_block_margin">16dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="large_margin">32dp</dimen>
+</resources>

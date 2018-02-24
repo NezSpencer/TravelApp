@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_blue"
+            android:background="@drawable/big_round_circle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-160dp"
+            android:layout_height="250dp"/>
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/civ_image"
+                android:layout_width="120dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                android:layout_below="@+id/tv_blue"
+                android:layout_marginTop="-60dp"
+                app:civ_shadow_radius="10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pp"
+                android:layout_height="150dp"/>
+
+
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:textSize="22sp"
+            android:text="Abdallah Mostafa"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/civ_image"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_location"
+            android:textSize="16sp"
+            android:textColor="#e0e0e0"
+            android:layout_below="@+id/tv_name"
+            android:text="Mansoura, Egypt"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_below="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/inter_block_margin"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:id="@+id/tv_private_det"
+                android:textSize="18sp"
+                android:layout_marginBottom="@dimen/inter_block_margin"
+                android:text="Private Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_email"
+                android:background="#e0f7fa"
+                android:text="Email"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_private_det"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_email_ans"
+                android:background="#e0f7fa"
+                android:text="abdallah_mostafa@gmail.com"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_private_det"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/tv_email"
+                android:layout_toEndOf="@+id/tv_email"
+                android:gravity="end|center_vertical"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_password"
+                android:background="#e0f7fa"
+                android:text="Password"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_password_ans"
+                android:background="#e0f7fa"
+                android:text="dmdmdmmdmdmd"
+                android:inputType="numberPassword"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_email"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/tv_password"
+                android:layout_toEndOf="@+id/tv_password"
+                android:gravity="end|center_vertical"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_gender"
+                android:background="#e0f7fa"
+                android:text="Gender"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_gender_ans"
+                android:background="#e0f7fa"
+                android:text="Male"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_password"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tv_gender"
+                android:layout_toEndOf="@+id/tv_gender"
+                android:gravity="end|center_vertical"
+                android:layout_height="40dp"/>
+        <TextView
+                android:id="@+id/tv_age"
+                android:background="#e0f7fa"
+                android:text="Age"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_password"
+                android:layout_marginStart="@dimen/inter_block_margin"
+                android:layout_marginLeft="@dimen/inter_block_margin"
+                android:layout_toEndOf="@+id/tv_gender_ans"
+                android:layout_toRightOf="@+id/tv_gender_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_age_ans"
+                android:background="#e0f7fa"
+                android:text="21 years"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_password"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/tv_age"
+                android:layout_toEndOf="@+id/tv_age"
+                android:gravity="end|center_vertical"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_phone"
+                android:background="#e0f7fa"
+                android:text="Phone Number"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_phone_ans"
+                android:background="#e0f7fa"
+                android:text="+234  8162773741"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/inter_block_margin"
+                android:paddingLeft="@dimen/inter_block_margin"
+                android:paddingRight="@dimen/inter_block_margin"
+                android:paddingEnd="@dimen/inter_block_margin"
+                android:layout_below="@+id/tv_gender"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:layout_toEndOf="@+id/tv_phone"
+                android:gravity="end|center_vertical"
+                android:layout_height="40dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

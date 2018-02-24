@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="@dimen/small_margin"
+        app:cardElevation="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/inter_block_margin"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/iv_house"
+                android:adjustViewBounds="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+        <RatingBar
+                android:id="@+id/rb_star"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:numStars="5"
+                android:rating="5"
+                android:layout_toRightOf="@+id/iv_house"
+                android:layout_toEndOf="@+id/iv_house"
+                android:layout_marginStart="@dimen/inter_block_margin"
+                android:layout_marginLeft="@dimen/inter_block_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:progressTint="#ffea00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_name"
+                android:textSize="18sp"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/iv_house"
+                android:layout_toEndOf="@+id/iv_house"
+                android:layout_below="@+id/rb_star"
+                android:layout_marginStart="@dimen/inter_block_margin"
+                android:layout_marginLeft="@dimen/inter_block_margin"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_locate"
+                style="@style/slogan"
+                android:text="yaba, Lagos"
+                android:textColor="@color/ash"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/iv_house"
+                android:layout_toEndOf="@+id/iv_house"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginStart="@dimen/inter_block_margin"
+                android:layout_marginLeft="@dimen/inter_block_margin"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageButton
+                android:id="@+id/ib_like"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rb_star"
+                android:src="@drawable/ic_favorite_border_black_24dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="@dimen/inter_block_margin"
+                android:layout_marginRight="@dimen/inter_block_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_price_f"
+                style="@style/SubText"
+                android:text="@string/min_price"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="@dimen/inter_view_margin"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_locate"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/inter_block_margin"
+                android:layout_marginLeft="@dimen/inter_block_margin"
+                android:layout_marginEnd="@dimen/inter_view_margin"
+                android:layout_marginRight="@dimen/inter_view_margin"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

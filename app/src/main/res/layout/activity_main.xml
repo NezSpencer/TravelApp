@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context="com.nezspencer.travelapp.MainActivity">
+
+    <ImageView
+            android:layout_width="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_logo"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:layout_height="80dp"/>
+
+    <TextView
+            android:id="@+id/tv_app_name"
+            style="@style/TitleText"
+            android:text="Travel App"
+            android:fontFamily="@font/roboto_thin_italic"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#3949ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_app_slogan"
+            style="@style/slogan"
+            android:layout_marginTop="@dimen/inter_view_margin"
+            android:text="Best way to organize travels"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#bdbdbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button android:id="@+id/sign_up"
+                android:text="@string/sign_up"
+                android:layout_marginTop="100dp"
+                android:textAllCaps="false"
+                android:elevation="@dimen/small_margin"
+                android:fontFamily="@font/opensanscondensed_bold"
+                android:background="@drawable/background_rounded"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+
+
+        <Button android:id="@+id/sign_in"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:elevation="@dimen/small_margin"
+                android:fontFamily="@font/opensanscondensed_bold"
+                android:background="@drawable/button_white_rounded"
+                android:textColor="@color/colorAccent"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

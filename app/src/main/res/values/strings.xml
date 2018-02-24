@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TravelApp</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="fb_login_text">Sign up with <b>Facebook</b></string>
+    <string name="home">Home</string>
+    <string name="tours">Tours</string>
+    <string name="explore">Explore</string>
+    <string name="profile">Profile</string>
+
+    <string name="min_price">400&#x20AC;</string>
+    <string name="avg_price">600&#x20AC;</string>
+    <string name="max_price">800&#x20AC;</string>
+    <string name="travel_summary">Your travel price : 700&#x20AC;</string>
+</resources>
